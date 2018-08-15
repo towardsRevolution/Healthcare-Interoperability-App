@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane prefHeight="500.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.RRH.View.AdvancedSearchController">
+    <children>
+        <Text layoutX="83.0" layoutY="88.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CATEGORY">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Text>
+        <TextField fx:id="category" layoutX="210.0" layoutY="68.0" prefHeight="27.0" prefWidth="236.0" />
+        <Text layoutX="72.0" layoutY="137.0" strokeType="OUTSIDE" strokeWidth="0.0" text="PARAMETERS">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Text>
+        <TextField fx:id="parameters" layoutX="210.0" layoutY="117.0" prefHeight="27.0" prefWidth="236.0" />
+        <TextArea fx:id="resultTextArea" layoutX="47.0" layoutY="162.0" prefHeight="282.0" prefWidth="534.0" />
+        <Button layoutX="507.0" layoutY="449.0" mnemonicParsing="false" onMouseClicked="#goBackToMainView" prefHeight="27.0" prefWidth="77.0" text="HOME" />
+        <Button layoutX="408.0" layoutY="449.0" mnemonicParsing="false" onMouseClicked="#goBackToSearch" text="GO BACK" />
+        <Button layoutX="478.0" layoutY="56.0" mnemonicParsing="false" onMouseClicked="#getRefinedResults" prefHeight="51.0" prefWidth="98.0" text="SEARCH" />
+        <TextField fx:id="patientID" layoutX="210.0" layoutY="21.0" prefHeight="27.0" prefWidth="236.0" />
+        <Text layoutX="82.0" layoutY="41.0" strokeType="OUTSIDE" strokeWidth="0.0" text="PATIENT ID">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Text>
+    </children>
+</AnchorPane>
