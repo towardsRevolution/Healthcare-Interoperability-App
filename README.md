@@ -1,7 +1,8 @@
 # Healthcare-Interoperability-App
 
-- Main design considerations:
+Main design considerations:
 a). Space complexity & Time complexity (Scalability);  DB Consistency; Maintainable, consistent application & easy error spotting.
+
 
 1). Space complexity: 
 	-- One place storage for PHR (in the form of PatientDetails object). No unnecessary data will occupy the cache when fetching a specific PHR. Storing a single object is much cheaper than storing multiple records in a mysql table.
