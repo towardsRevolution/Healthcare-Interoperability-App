@@ -11,7 +11,7 @@ Main design considerations:
 	-- PHR for a patient is fetched in a range of 5-20 msec.
 	-- Refined search is performed in a range of 5-50 msec (post caching).
 
-3). Maintainability & ease in error spotting (MVC & JPA effectiveness):
+3). Maintainability & easy error-spotting (MVC & JPA effectiveness):
 	-- No external DB connections. All connections were established using JPA. Used the persistence api itself (with named native queries, criteria API) to access, create, manage, delete database elements. IT ALSO MAKES THE APPLICATION EXTREMELY CONSISTENT.
 
 4). Application consistency:
